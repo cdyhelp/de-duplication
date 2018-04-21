@@ -11,12 +11,6 @@ import (
 	"strings"
 )
 
-func check(e error) {
-	if e != nil {
-		fmt.Println(e)
-	}
-}
-
 func isFileExist(filename string) bool {
 	_, err := os.Stat(filename)
 	return err == nil || os.IsExist(err)
