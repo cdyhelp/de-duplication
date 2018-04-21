@@ -70,7 +70,7 @@ func readFile(fileName string, m map[string]bool) error {
 
 func main() {
 	var input, outputFile, force string
-	flag.StringVar(&input, "i", "", "input files")
+	flag.StringVar(&input, "i", "", "input files(file1+file2+file3)")
 	flag.StringVar(&outputFile, "o", "", "output file")
 	flag.StringVar(&force, "f", "no", "force")
 	flag.Parse()
